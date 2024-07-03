@@ -1,0 +1,116 @@
+:root {
+  --backgrond-color: #f4f4f4;
+  --color-primary: #333;
+  --fundo-app: #efefef;
+  --button:#333974;
+  --color-white:#fff;
+  --borda:#ddd;
+  --botao-complete:#5cb85c;
+  --botao-remove:#d9534f;
+  --borda:#555;
+}
+body {
+  font-family: Arial;
+  background-color: var(--backgrond-color);
+  padding: 30px;
+  color: var(--color-primary);
+  background-image: url("image/pexels-peng-liu-45946-169647.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto 300px;
+  background-color: var(--fundo-app);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+.filter, .search{
+  border-bottom: 1px solid var(--borda);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.filter-options{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+
+}
+
+.filter-options div{
+  flex: 1 1 0;
+}
+
+.filter p{
+  color: var(--color-primary);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+p {
+  margin: 10px 0;
+}
+input {
+  box-sizing: border-box;
+}
+
+/* aqui todo estilo do componente todoForm */
+button{
+  background-color: var(--button);
+  color: var(--color-white);
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
+}
+
+button:hover{
+  opacity: 1;
+}
+
+.todo-list{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom:  1px solid var(--borda);
+}
+
+.todo{
+  background-color: var(--color-white);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.complete{
+  background-color: var(--botao-complete);
+  }
+.remove{
+  background-color: var(--botao-remove);
+}
+
+.todo-form{
+  padding-bottom: 1.5rem;
+}
+input, select{
+  padding: 5px;
+  margin-bottom: 10px;
+  border:1px solid var(--borda);
+  border-radius: 3px;
+  width: 100%;
+}
